@@ -1,3 +1,11 @@
+/* Global Styles */
+#logo svg {
+  fill: dodgerblue;
+  width: 50px;
+  margin: 30px 0;
+}
+
+/* Styles for intro */
 #tw-intro {
   min-height: 100vh;
   display: flex;
@@ -56,12 +64,6 @@
   padding: 20px 5%;
 }
 
-#tw-intro .cta svg {
-  fill: dodgerblue;
-  width: 50px;
-  margin: 30px 0;
-}
-
 #tw-intro .cta h1 {
   font-size: 64px;
   margin: 20px 0 10px;
@@ -104,3 +106,100 @@
 #tw-intro .cta .links a#login-link:hover {
   background-color: #dcecf8;
 }
+
+/* Styles for the login page */
+#login {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+#login #logo {
+  text-align: left;
+}
+
+#login .content {
+  width: 400px;
+  height: auto;
+  padding: 0px 30px;
+  text-align: center;
+}
+
+#login .content h1 {
+  font-size: 31px;
+  text-align: left;
+}
+
+#login .content form {
+  text-align: left;
+  margin: 20px 0;
+}
+
+#login .content form > div {
+  position: relative;
+  width: 100%;
+  height: 48px;
+  margin-bottom: 30px;
+}
+
+#login .content form > div input {
+  border: 1px solid #ccc;
+  outline: none;
+  padding: 15px 5px 0px;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+#login .content form > div label {
+  position: absolute;
+  width: 100%;
+  left: 8px;
+  top: 50%;
+  background: transparent;
+  font-size: 18px;
+  transform: translateY(-50%);
+  transition: 0.3s;
+  cursor: text;
+  color: #555;
+}
+
+/* Focus styles for input */
+#login .content form > div input:focus {
+  border-color: dodgerblue;
+  border-width: 2px;
+}
+
+#login .content form > div input:focus + label {
+  color: dodgerblue;
+  font-size: 11px;
+  top: 10px;
+}
+
+/* For form button */
+#login .content form button {
+  width: 100%;
+  height: 48px;
+  border-radius: 50px;
+  background-color: lightskyblue;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+#login .content a,
+#login content > span {
+  color: #1b95e0;
+  text-decoration: none;
+  text-align: center;
+}
+
+#login .content a:hover {
+  text-decoration: underline;
+}
+
+/* Styles for the profile */
