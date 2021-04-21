@@ -203,3 +203,8 @@
 }
 
 /* Styles for the profile */
+#profile {
+  height: 100vh;
+  overflow: hidden;
+  display: grid;
+}
